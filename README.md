@@ -62,3 +62,23 @@ In this example:
 
   **Templated Containers let you store and manage data of any type.
   Iterators help you navigate and access data within those containers**
+
+
+## ex00
+-------
+
+
+This function template, `easyfind`, is designed to search for a specific integer (`value`) in a container (like `std::vector`, `std::list`, etc.). The container can be of any type, hence the use of the template parameter `T`.
+
+**template<typename T>**: This makes the function a template, meaning it can work with any type of container that supports iterators (like `std::vector`, `std::list`, etc.).
+
+**std::find(container.begin(), container.end(), value)**:
+   - `std::find` is a function from the Standard Library that searches for the first occurrence of `value` in the range between `container.begin()` and `container.end()`.
+   - `container.begin()` returns an iterator to the first element in the container, and `container.end()` returns an iterator to the element past the last element in the container.
+
+**return valuePos**: If the value is found, the function returns the iterator pointing to that element.
+
+- This function template allows you to search for an integer in any container that supports iterators.
+- If the integer is found, it returns an iterator pointing to it.
+- If the integer isn't found, it throws an exception.
+
