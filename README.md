@@ -65,7 +65,6 @@ In this example:
 
 
 ## ex00
--------
 
 
 This function template, `easyfind`, is designed to search for a specific integer (`value`) in a container (like `std::vector`, `std::list`, etc.). The container can be of any type, hence the use of the template parameter `T`.
@@ -82,3 +81,6 @@ This function template, `easyfind`, is designed to search for a specific integer
 - If the integer is found, it returns an iterator pointing to it.
 - If the integer isn't found, it throws an exception.
 
+## ex01
+
+`std::sort` will sort the elements in the range [begin, end) in **ascending order** by default.
