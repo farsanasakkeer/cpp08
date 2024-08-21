@@ -84,3 +84,5 @@ This function template, `easyfind`, is designed to search for a specific integer
 ## ex01
 
 `std::sort` will sort the elements in the range [begin, end) in **ascending order** by default.
+
+`std::back_inserter(numbers)` is a convenient way to append a range of elements to the `numbers` vector, allowing for a simple and clean method of inserting data while using the power of the standard library's algorithms.
