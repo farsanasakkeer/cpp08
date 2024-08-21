@@ -94,8 +94,11 @@ The line `std::generate(newNumbers.begin(), newNumbers.end(), std::rand);` uses 
    - It assigns values to each element in a range (defined by iterators) by calling a specified generator function.
 
 **`std::rand`:**
+
 `std::rand` is a function in the C++ Standard Library that generates a pseudo-random integer.
+
 In this context, `std::rand` is used as the generator function for `std::generate`.
+
 Each time `std::generate` calls `std::rand`, it inserts the generated random number into the vector.
 
 - `std::generate(newNumbers.begin(), newNumbers.end(), std::rand);` will iterate over each element in the `newNumbers` vector (from the first element to the last).
