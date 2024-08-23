@@ -13,6 +13,18 @@
 
 template <typename T>
 class MutantStack{
+class MutantStatck : public std::stack<T>
+{
+	public:
+
+		MutantStatck(): std::stack<T>() {}
+		MutantStatck(const MutantStatck &other): std::stack<T>(other){}
+		MutantStatck &operator=(const MutantStatck &other)
+		{
+			std::stack<T>::operator=(other);
+			return *this;
+		}
+		~MutantStatck(){}
 
 };
 
